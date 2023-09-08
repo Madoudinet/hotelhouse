@@ -32,6 +32,7 @@ class AvisType extends AbstractType
                     'Chambre'=>'Chambre',
                     'Restaurant'=>'Restaurant',
                     'Spa'=>'Spa',
+                    'Hotel'=>'Hotel',
                 ]
             ])
         ;
