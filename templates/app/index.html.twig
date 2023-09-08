@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hotel House{% endblock %}
+
+{% block body %}
+
+<div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+  {% for slider in sliders %}  
+        <div class="carousel-item {% if slider.ordre == 1 %} active {% endif %}">
+      <img src="{{ asset('img/upload/' ~ slider.photo) }}" class="d-block w-100" alt="...">
+    </div>    
+  {% endfor %}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+<section class="container my-5">
+<div class="row row-cols-1 row-cols-md-4 g-4 justify-content-around">
+  <div class="col">
+    <div class="h-100">
+      <img src="{{ asset('img/fixe/chambrecircle.jpg') }}" class="card-img-top rounded-circle" alt="...">
+      <div class="card-body">
+        <h3 class="card-title my-4 text-center fw-bold">Nos Chambres</h3>
+        <p class="card-text my-4">Réveillez-vous dans le confort ultime, où chaque nuit devient une expérience de rêve. Notre chambre d'hôtel vous offre un havre de tranquillité et d'élégance, une escapade parfaite pour votre prochain séjour inoubliable.</p>
+      </div>
+      <div class="card-footer text-center">
+        <a href="{{ path('app_chambre') }}" class="btn btn-primary">Voir plus</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="h-100">
+      <img src="{{ asset('img/fixe/restaurantcircle.jpg') }}" class="card-img-top rounded-circle" alt="...">
+      <div class="card-body">
+        <h3 class="card-title my-4 text-center fw-bold">Notre Restaurant</h3>
+        <p class="card-text my-4">Savourez l'excellence culinaire dans un cadre envoûtant, où chaque plat raconte une histoire de passion et de goût. Bienvenue chez nous, où chaque bouchée est une expérience inoubliable.</p>
+      </div>
+      <div class="card-footer text-center">
+        <a href="{{ path('app_restaurant') }}" class="btn btn-primary">Voir plus</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="h-100">
+      <img src="{{ asset('img/fixe/spacircle.jpg') }}" class="card-img-top rounded-circle" alt="...">
+      <div class="card-body">
+        <h3 class="card-title my-4 text-center fw-bold">Notre Spa</h3>
+        <p class="card-text my-4">Plongez dans l'ultime oasis de bien-être et de détente. Notre spa vous offre une évasion totale du stress quotidien, un havre de sérénité où chaque soin vous rapproche de l'harmonie intérieure. Découvrez le paradis du bien-être avec nous.</p>
+      </div>
+      <div class="card-footer text-center">
+        <a href="{{ path('app_spa') }}" class="btn btn-primary">Voir plus</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock %}

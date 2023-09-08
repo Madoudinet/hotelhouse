@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les avis{% endblock %}
+
+{% block body %}
+
+<h1 class="text-center my-4">Les avis</h1>
+<div class="container">
+<a href="{{ path('app_avis_commentaire') }}" class="btn btn-primary">Poster un avis</a>
+{% for avi in avis %}
+    
+<div class="card my-3">
+  <h5 class="card-header">{{ avi.prenom }} {{ avi.nom }}</h5>
+  <div class="card-body">
+    <h5 class="card-title">Catégorie : {{ avi.category }}</h5>
+    <p class="card-text">{{ avi.commantaire }}</p>
+    <p class="card-text">Note :
+    {% if avi.note == 0 %}
+<i class="bi bi-star"></i>
+<i class="bi bi-star"></i>
+<i class="bi bi-star"></i>
+<i class="bi bi-star"></i>
+<i class="bi bi-star"></i>
+    {% elseif avi.note == 1 %}
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star"></i>
+<i class="bi bi-star"></i>
+<i class="bi bi-star"></i>
+<i class="bi bi-star"></i>
+    {% elseif avi.note == 2 %}
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star"></i>
+<i class="bi bi-star"></i>
+<i class="bi bi-star"></i>
+    {% elseif avi.note == 3 %}
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star"></i>
+<i class="bi bi-star"></i>
+    {% elseif avi.note == 4 %}
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star"></i>
+    {% elseif avi.note == 5 %}
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+    {% endif %}  
+    </p>
+    <p class="card-text">Posté le {{ avi.dateEnregistrement|date('d/m/Y à H:i:s') }}</p>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+{% endblock %}

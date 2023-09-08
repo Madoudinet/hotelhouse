@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réservation{% endblock %}
+
+{% block body %}
+
+<div class="container mt-4">
+<div class=" mb-3">
+  <h3 class="card-header">{{ chambre.titre }}</h3>
+<img src="{{ asset('img/upload/'~ chambre.photo) }}" class="d-block w-100" alt="...">
+  
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Prix par nuit : {{ chambre.prixJournalier }} €</li>
+    <li class="list-group-item">{{ chambre.descriptionLongue|raw }}</li>
+  </ul>
+</div>
+</div>
+
+<div class="container my-4">
+    {{ form_errors(commande) }}
+
+    {{ form_start(commande) }}
+    <div class="row">
+    <div class="col-6">{{ form_row(commande.prenom) }}</div>
+    <div class="col-6">{{ form_row(commande.nom) }}</div>
+    <div class="col-6">{{ form_row(commande.telephone) }}</div>      
+    <div class="col-6">{{ form_row(commande.email) }}</div>      
+    <div class="col-6">{{ form_row(commande.date_arrivee) }}</div>
+    <div class="col-6">{{ form_row(commande.date_depart) }}</div>
+    </div>       
+        <button type="submit" class="btn btn-primary">Réserver</button>
+    {{ form_end(commande) }}
+</div>
+
+
+{% endblock %}

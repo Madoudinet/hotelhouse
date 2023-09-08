@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Informations
+{% endblock %}
+
+{% block body %}
+	<link rel="stylesheet" href="./css/style.css">
+
+	<h1 class="text-center my-4">Qui Sommes-Nous ?</h1>
+	<div class="container">
+		<div class="row my-4">
+			<div class="col-7 gap-3">
+				<p>Bienvenue à
+					<strong class="fw-bold">Hotel House</strong>, votre refuge d'exception au cœur de
+					<strong class="fw-bold">Marseille</strong>. Notre histoire est celle de l'excellence en matière d'hospitalité et de service personnalisé depuis
+					<strong class="fw-bold">1990</strong>.</p>
+
+				<div>
+					<h3>Notre Histoire</h3>
+					<p>Fondé par
+						<strong class="fw-bold">Maxime Durand</strong>
+						avec une vision de créer un lieu où le luxe et le confort se rencontrent,
+						<strong class="fw-bold">Hotel House</strong>
+						a rapidement gagné une réputation enviable dans l'industrie hôtelière. Depuis lors, notre établissement s'est développé pour devenir un pilier de l'hospitalité haut de gamme à
+						<strong class="fw-bold">Marseille</strong>.</p>
+				</div>
+
+				<div>
+					<h3>Notre Philosophie</h3>
+					<p>Chez
+						<strong class="fw-bold">Hotel House</strong>, nous croyons en l'art de faire de chaque séjour une expérience inoubliable. Nous mettons un point d'honneur à anticiper et à répondre à tous les besoins de nos clients avec grâce et professionnalisme. Notre engagement envers l'excellence transparaît dans chaque détail, de l'accueil chaleureux à l'élégance de nos chambres, en passant par notre cuisine raffinée.</p>
+				</div>
+
+				<div>
+					<h3>Notre Équipe</h3>
+					<p>Notre équipe dévouée et passionnée est le cœur de notre succès. Chacun de nos membres du personnel est formé à offrir un service exceptionnel, attentif à chaque demande, et dédié à rendre votre séjour mémorable.</p>
+				</div>
+
+				<div>
+					<h3>Nos Installations</h3>
+					<p>
+						<strong class="fw-bold">Hotel House</strong>
+						offre une gamme complète d'installations et de services pour répondre à tous vos besoins, que ce soit pour les voyages d'affaires ou les escapades romantiques. De nos chambres luxueuses à notre restaurant gastronomique, de notre spa apaisant à nos espaces de réunion bien équipés, nous avons tout ce dont vous avez besoin pour un séjour parfait.</p>
+				</div>
+
+				<div>
+					<h3>Notre Engagement envers l'Environnement
+					</h3>
+					<p>Chez
+						<strong class="fw-bold">Hotel House</strong>, nous sommes soucieux de l'environnement. Nous avons mis en place des pratiques durables pour minimiser notre empreinte écologique et contribuer à la préservation de notre planète.</p>
+
+					<p>Nous sommes fiers de vous accueillir à
+						<strong class="fw-bold">Hotel House</strong>
+						et nous nous engageons à vous offrir une expérience inoubliable à chaque visite. Merci de nous faire confiance pour vos voyages et vos moments précieux. Nous avons hâte de vous accueillir chez nous.</p>
+					<p>N'hésitez pas à nous contacter pour toute demande ou réservation.</p>
+				</div>
+
+			</div>
+			<div class="col-5 d-flex justify-content-center">
+
+				<img src="{{ asset('img/fixe/hotel.jpg') }}" alt="" style="width: 28rem;" class="">
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}
