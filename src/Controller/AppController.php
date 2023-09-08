@@ -158,5 +158,17 @@ class AppController extends AbstractController
         return $this->render('app/actualites.html.twig');
     }
 
+    #[Route('/conditions', name:'app_conditions')]
+    public function conditions()
+    {
+        return $this->render('app/conditions.html.twig');
+    }
+
+    #[Route('/plan', name:'app_plan')]
+    public function plan()
+    {
+        return $this->render('app/plan.html.twig');
+    }
+
 
 }
