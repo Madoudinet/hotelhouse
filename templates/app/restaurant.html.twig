@@ -4,7 +4,7 @@
 
 {% block body %}
 
-	<link rel="stylesheet" href="./css/style.css">
+	{# <link rel="stylesheet" href="./css/style.css"> #}
 
 
 <div class="bg-black bg-opacity-50 w-100 h-25 text-center position-absolute top-50 start-50 translate-middle">
@@ -18,56 +18,63 @@
 
 <div class="container">
     <div class="row">
-    <div class="my-4">
-        <h2 class="my-4">Menu</h2>
+            <h2 class="my-4">Menu</h2>
+        <div class="my-4 col-6">
 
-        <div>
-            <h3>Entrées</h3>
-        <ul>
-            <li><strong class="fw-bold text-light">Salade César </strong>: Laitue romaine, croûtons à l'ail, parmesan, sauce Caesar : 9 €</li>
-            <li><strong class="fw-bold text-light">Velouté de Champignons </strong>: Crème fraîche, herbes fraîches : 8 €</li>
-            <li><strong class="fw-bold text-light">Carpaccio de Bœuf </strong>: Filet de bœuf, roquette, copeaux de parmesan : 12 €</li>
-        </ul>
-        </div>
-        <div>
-            <h3>Plats Principaux</h3>
+            <div>
+                <h3>Entrées</h3>
             <ul>
-                <li><strong class="fw-bold text-light">Filet de Saumon Grillé </strong>: Sauce au citron, purée de pommes de terre, légumes de saison : 18 €</li>
-                <li><strong class="fw-bold text-light">Risotto aux Champignons Sauvages </strong>: Parmesan, truffe noire : 16 €</li>
-                <li><strong class="fw-bold text-light">Entrecôte Grillée </strong>: Frites maison, sauce béarnaise : 24 €</li>
+                <li><strong class="fw-bold">Salade César </strong>: Laitue romaine, croûtons à l'ail, parmesan, sauce Caesar : 9 €</li>
+                <li><strong class="fw-bold">Velouté de Champignons </strong>: Crème fraîche, herbes fraîches : 8 €</li>
+                <li><strong class="fw-bold">Carpaccio de Bœuf </strong>: Filet de bœuf, roquette, copeaux de parmesan : 12 €</li>
             </ul>
-        </div>
-        <div>
-            <h3>Spécialités du Chef</h3>
-            <ul>
-                <li><strong class="fw-bold text-light">Poulet à la Provençale </strong>: Tomates, olives, herbes de Provence, riz basmati : 17 €</li>
-                <li><strong class="fw-bold text-light">Pâtes Fraîches au Homard </strong>: Sauce au beurre d'ail, persil frais : 28 €</li>
-                <li><strong class="fw-bold text-light">Médaillon de Veau aux Morilles </strong>: Pommes de terre sautées, sauce aux morilles : 26 €</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Desserts</h3>
-            <ul>
-                <li><strong class="fw-bold text-light">Tiramisu Maison </strong>: Café, mascarpone, cacao : 7 €</li>
-                <li><strong class="fw-bold text-light">Fondant au Chocolat </strong>: Glace à la vanille, coulis de framboises : 8 €</li>
-                <li><strong class="fw-bold text-light">Crème Brûlée </strong>: Vanille de Madagascar : 7 €</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Boissons</h3>
-            <ul>
-                <li>Eaux minérales, sodas, jus de fruits, café, thé, et une sélection de vins sont disponibles.</li>
+            </div>
+            <div>
+                <h3>Plats Principaux</h3>
+                <ul>
+                    <li><strong class="fw-bold">Filet de Saumon Grillé </strong>: Sauce au citron, purée de pommes de terre, légumes de saison : 18 €</li>
+                    <li><strong class="fw-bold">Risotto aux Champignons Sauvages </strong>: Parmesan, truffe noire : 16 €</li>
+                    <li><strong class="fw-bold">Entrecôte Grillée </strong>: Frites maison, sauce béarnaise : 24 €</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Spécialités du Chef</h3>
+                <ul>
+                    <li><strong class="fw-bold">Poulet à la Provençale </strong>: Tomates, olives, herbes de Provence, riz basmati : 17 €</li>
+                    <li><strong class="fw-bold">Pâtes Fraîches au Homard </strong>: Sauce au beurre d'ail, persil frais : 28 €</li>
+                    <li><strong class="fw-bold">Médaillon de Veau aux Morilles </strong>: Pommes de terre sautées, sauce aux morilles : 26 €</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Desserts</h3>
+                <ul>
+                    <li><strong class="fw-bold">Tiramisu Maison </strong>: Café, mascarpone, cacao : 7 €</li>
+                    <li><strong class="fw-bold">Fondant au Chocolat </strong>: Glace à la vanille, coulis de framboises : 8 €</li>
+                    <li><strong class="fw-bold">Crème Brûlée </strong>: Vanille de Madagascar : 7 €</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Boissons</h3>
+                <ul>
+                    <li>Eaux minérales, sodas, jus de fruits, café, thé, et une sélection de vins sont disponibles.</li>
 
-            </ul>
+                </ul>
+            </div>
+            <div>
+                <h3>Horaires d'ouverture</h3>
+                <ul>
+                    <li><strong class="fw-bold">Lundi à Vendredi </strong>: 12h00 - 14h30, 19h00 - 22h30</li>
+                    <li><strong class="fw-bold">Samedi et Dimanche </strong>: 19h00 - 22h30</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h3>Horaires d'ouverture</h3>
-            <ul>
-                <li><strong class="fw-bold text-light">Lundi à Vendredi </strong>: 12h00 - 14h30, 19h00 - 22h30</li>
-                <li><strong class="fw-bold text-light">Samedi et Dimanche </strong>: 19h00 - 22h30</li>
-            </ul>
+        <div class="col-6">
+            <div class="row justify-content-end">
+                <img src="{{ asset('img/fixe/salade.jpg')}}" class="w-75 my-4" alt="">
+                <img src="{{ asset('img/fixe/entrecote.jpg')}}" class="w-75 my-4" alt="">
+            </div>
+        
         </div>
-    </div>
 
     </div>
 

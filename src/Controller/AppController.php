@@ -75,6 +75,7 @@ class AppController extends AbstractController
 
             $manager->persist($commande);
             $manager->flush();
+            $this->addFlash('success', 'Votre réservation a bien été enregistrée !');
             return $this->redirectToRoute('home');
         }
 
@@ -149,6 +150,12 @@ class AppController extends AbstractController
     public function mentionlegales()
     {
         return $this->render('app/mentionlegales.html.twig');
+    }
+
+    #[Route('/actualites', name:'app_actualites')]
+    public function actualites()
+    {
+        return $this->render('app/actualites.html.twig');
     }
 
 
